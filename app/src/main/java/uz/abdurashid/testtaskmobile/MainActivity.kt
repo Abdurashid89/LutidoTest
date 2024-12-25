@@ -18,7 +18,6 @@ class MainActivity : ComponentActivity() {
 
 
         WindowCompat.setDecorFitsSystemWindows(window, true)
-      //  enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
             TestTaskMobileTheme {

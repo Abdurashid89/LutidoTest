@@ -103,12 +103,6 @@ fun YandexMarker(
 
                 MapView(ctx).apply {
 
-//                    map.mapObjects.addTapListener { mapObject, point ->
-//                        // Mapdagi ob'ekt bosilganda ishlatilishi mumkin
-//                        println("Tapped point: ${point.latitude}, ${point.longitude}")
-//                        true
-//                    }
-
                     map.apply {
                         addCameraListener {
                                 currentMap,
@@ -170,7 +164,7 @@ fun YandexMarker(
                 SearchBar(query = uiState.query) { newQuery ->
                     viewModel.searchByAddress(
                         newQuery, BoundingBox(
-                            Point(41.1870, 69.1221), // Janubi-g'arb nuqta (SW corner)
+                            Point(41.1870, 69.1221),
                             Point(41.3890, 69.3600)
                         )
                     )

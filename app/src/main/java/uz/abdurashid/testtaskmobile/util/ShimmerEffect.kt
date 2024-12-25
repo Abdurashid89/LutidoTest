@@ -43,19 +43,15 @@ fun FavouriteItemShimmer(modifier: Modifier = Modifier) {
         Row(
             modifier = Modifier
                 .background(Color.White)
-               // .padding(8.dp)
                 .fillMaxWidth()
                 .background(shimmerBrush)
-                //.padding(horizontal = 4.dp),
            , horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Left placeholder
             Column(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxHeight()
-//                    .background(shimmerBrush),
                , verticalArrangement = Arrangement.Center
             ) {
                 Box(
@@ -69,16 +65,8 @@ fun FavouriteItemShimmer(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(32.dp)
-//                        .background(shimmerBrush)
                 )
             }
-
-            // Right placeholder
-          /*  Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .background(shimmerBrush)
-            )*/
         }
     }
 }
